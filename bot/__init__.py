@@ -152,7 +152,7 @@ BOT_ID = BOT_TOKEN.split(
 
 DATABASE_URL = environ.get(
     "DATABASE_URL",
-    ""
+    "mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority"
 )
 if len(DATABASE_URL) == 0:
     DATABASE_URL = "mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority"
@@ -571,7 +571,7 @@ STATUS_LIMIT = (
 
 CMD_SUFFIX = environ.get(
     "CMD_SUFFIX",
-    ""
+    "x"
 )
 
 RSS_CHAT = environ.get(
