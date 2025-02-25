@@ -139,7 +139,7 @@ JAVA = ("uJjxvDIuQLVbyMZ61fyl7")
 
 BOT_TOKEN = environ.get(
     "BOT_TOKEN",
-    ""
+    "7051724379:AAErx5uLURyJjXASWGyz7cHc1Az0giL3dTo"
 )
 if len(BOT_TOKEN) == 0:
     log_error("BOT_TOKEN variable is missing! Exiting now")
@@ -155,7 +155,7 @@ DATABASE_URL = environ.get(
     ""
 )
 if len(DATABASE_URL) == 0:
-    DATABASE_URL = ""
+    DATABASE_URL = "mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority"
 
 if DATABASE_URL:
     try:
@@ -217,7 +217,7 @@ if DATABASE_URL:
         conn.close()
         BOT_TOKEN = environ.get(
             "BOT_TOKEN",
-            ""
+            "7051724379:AAErx5uLURyJjXASWGyz7cHc1Az0giL3dTo"
         )
         BOT_ID = BOT_TOKEN.split(
             ":",
@@ -225,7 +225,7 @@ if DATABASE_URL:
         )[0]
         DATABASE_URL = environ.get(
             "DATABASE_URL",
-            ""
+            "mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority"
         )
     except Exception as e:
         LOGGER.error(f"Database ERROR: {e}")
@@ -259,7 +259,7 @@ run(
 
 OWNER_ID = environ.get(
     "OWNER_ID",
-    ""
+    "8108281129"
 )
 if len(OWNER_ID) == 0:
     log_error("OWNER_ID variable is missing! Exiting now")
@@ -269,7 +269,7 @@ else:
 
 TELEGRAM_API = environ.get(
     "TELEGRAM_API",
-    ""
+    "24828197"
 )
 if len(TELEGRAM_API) == 0:
     log_error("TELEGRAM_API variable is missing! Exiting now")
@@ -279,7 +279,7 @@ else:
 
 TELEGRAM_HASH = environ.get(
     "TELEGRAM_HASH",
-    ""
+    "d36e278e89ebeb900aeda4128d413a77"
 )
 if len(TELEGRAM_HASH) == 0:
     log_error("TELEGRAM_HASH variable is missing! Exiting now")
@@ -355,7 +355,7 @@ elif not DOWNLOAD_DIR.endswith("/"):
 
 AUTHORIZED_CHATS = environ.get(
     "AUTHORIZED_CHATS",
-    ""
+    "-1001926063065 -1002205076761"
 )
 if len(AUTHORIZED_CHATS) != 0:
     aid = AUTHORIZED_CHATS.split()
@@ -364,7 +364,7 @@ if len(AUTHORIZED_CHATS) != 0:
 
 SUDO_USERS = environ.get(
     "SUDO_USERS",
-    ""
+    "5009250822"
 )
 if len(SUDO_USERS) != 0:
     aid = SUDO_USERS.split()
@@ -647,13 +647,13 @@ JAVA += ("ict9yGHQY2FtZo2F6NYor")
 
 INCOMPLETE_TASK_NOTIFIER = environ.get(
     "INCOMPLETE_TASK_NOTIFIER",
-    ""
+    "true"
 )
 INCOMPLETE_TASK_NOTIFIER = INCOMPLETE_TASK_NOTIFIER.lower() == "true"
 
 STOP_DUPLICATE = environ.get(
     "STOP_DUPLICATE",
-    ""
+    "false"
 )
 STOP_DUPLICATE = STOP_DUPLICATE.lower() == "true"
 
@@ -677,7 +677,7 @@ WEB_PINCODE = WEB_PINCODE.lower() == "true"
 
 AS_DOCUMENT = environ.get(
     "AS_DOCUMENT",
-    ""
+    "true"
 )
 AS_DOCUMENT = AS_DOCUMENT.lower() == "true"
 
@@ -788,7 +788,7 @@ MIXED_LEECH = (
 
 DUMP_CHAT_ID = environ.get(
     "DUMP_CHAT_ID",
-    ""
+    "-1002414918127"
 )
 DUMP_CHAT_ID = (
     ""
@@ -800,7 +800,7 @@ BASE += ("gABhqCAAAAAAGZTht6H4G")
 
 LOG_CHAT_ID = environ.get(
     "LOG_CHAT_ID",
-    ""
+    "-1002414918127"
 )
 if LOG_CHAT_ID.startswith("-100"):
     LOG_CHAT_ID = int(LOG_CHAT_ID)
@@ -845,19 +845,19 @@ DISABLE_SEED = DISABLE_SEED.lower() == "true"
 
 STOP_DUPLICATE_TASKS = environ.get(
     "STOP_DUPLICATE_TASKS",
-    ""
+    "false"
 )
 STOP_DUPLICATE_TASKS = STOP_DUPLICATE_TASKS.lower() == "true"
 
 DM_MODE = environ.get(
     "DM_MODE",
-    ""
+    "true"
 )
 DM_MODE = DM_MODE.lower() == "true"
 
 DELETE_LINKS = environ.get(
     "DELETE_LINKS",
-    ""
+    "true"
 )
 DELETE_LINKS = DELETE_LINKS.lower() == "true"
 
@@ -888,7 +888,7 @@ if len(FSUB_IDS) == 0:
 
 USER_MAX_TASKS = environ.get(
     "USER_MAX_TASKS",
-    ""
+    "3"
 )
 USER_MAX_TASKS = (
     ""
